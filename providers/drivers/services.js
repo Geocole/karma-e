@@ -12,6 +12,7 @@ export default function makeServicesDriver ({ service }) {
         },
         methods:{
             async list(){
+                console.log(service)
              this.response = await service.list()
             }
         }
